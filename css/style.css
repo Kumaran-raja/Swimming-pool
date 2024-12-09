@@ -4,6 +4,7 @@
     border-right: 1px solid black;
     padding: 0px 10px;
 }
+
 *{
     box-sizing: initial;
     cursor:default;
@@ -555,8 +556,8 @@ footer{
  
     /* nav bar */
     #sideNav {
-        right: -380px;
-        width: 380px;
+        right: -350px;
+        width: 350px;
       }
       #sideNav nav ul li a {
         font-size: 25px;
