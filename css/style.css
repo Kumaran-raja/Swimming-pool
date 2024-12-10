@@ -15,10 +15,11 @@ a{
 }
 .swimmingpool_img {
     max-width: 100%;
-    aspect-ratio: 20 / 9; /* Adjust based on your design */
+    aspect-ratio: 20 / 9;
     overflow: hidden;
     object-fit: cover;
 }
+
 button{
     background-color: white;
     color: black;
@@ -191,6 +192,7 @@ footer{
         display: grid;
         grid-template-columns: 100%;
         padding: 10px;
+        margin-top: 30px;
     }
     .contact_input{
         margin: 10px;
@@ -507,7 +509,7 @@ footer{
         padding: 0px 30px;
     }
     .product_grid  p{
-        font-size: 15px;
+        font-size: 18px;
     }
     .contact_grid{
         grid-template-columns: 50% 50%;
@@ -579,7 +581,7 @@ footer{
         padding: 0px 30px;
     }
     .product_grid  p{
-        font-size: 15px;
+        font-size: 20px;
     }
     .contact_grid{
         grid-template-columns: 50% 50%;
