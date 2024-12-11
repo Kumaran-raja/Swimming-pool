@@ -4,7 +4,23 @@
     border-right: 1px solid black;
     padding: 0px 10px;
 }
-
+.zoom-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .products_view_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .zoom-container:hover .products_view_img {
+    transform: scale(1.2);
+  }
 *{
     box-sizing: initial;
     cursor:default;
@@ -15,9 +31,15 @@ a{
 }
 .swimmingpool_img {
     max-width: 100%;
-    aspect-ratio: 20 / 9;
+    aspect-ratio: 19 / 9;
     overflow: hidden;
     object-fit: cover;
+}
+.home_button{
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
 }
 .content_grid {
     padding: 20px;
@@ -316,6 +338,13 @@ footer{
         padding: 0px 10px;
 
     }
+    .products_view_container{
+        grid-template-rows: 120px 120px 120px;
+    }
+    .zoom-container {
+       
+        height: 120px;
+      }
     .menu_img{
         width: 30px;
         height: 30px;
@@ -328,13 +357,18 @@ footer{
         padding: 0px 15px;
 
     }
+    
     .menu_img{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     .products_view_container{
         grid-template-rows: 120px 120px 120px;
     }
+    .zoom-container {
+       
+        height: 120px;
+      }
     .product_grid  p{
         font-size: 13px;
     }
@@ -347,12 +381,16 @@ footer{
 
     }
     .menu_img{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     .products_view_container{
         grid-template-rows: 120px 120px 120px;
     }
+    .zoom-container {
+       
+        height: 120px;
+      }
     .product_grid  p{
         font-size: 15px;
     }
@@ -365,12 +403,16 @@ footer{
 
     }
     .menu_img{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     .products_view_container{
         grid-template-rows: 150px 150px 150px;
     }
+    .zoom-container {
+       
+        height: 150px;
+      }
     .service_grid h2{
         font-size: 25px;
     }
@@ -396,8 +438,8 @@ footer{
 
     }
     .menu_img{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     .intro_grid{
         grid-template-columns: 50% 50%;
@@ -417,6 +459,10 @@ footer{
     .products_view_container{
         grid-template-rows: 150px 150px 150px;
     }
+    .zoom-container {
+       
+        height: 150px;
+      }
     .service_grid li{
         font-size: 18px;
     }
@@ -437,14 +483,14 @@ footer{
         font-size: medium;
     }
     .nav_img{
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
         padding: 0px 20px;
         
     }
     .menu_img{
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
 
     .intro_grid{
@@ -457,6 +503,10 @@ footer{
     .products_view_container{
         grid-template-rows: 200px 200px 200px;
     }
+    .zoom-container {
+       
+        height: 200px;
+      }
       /* nav bar */
       #sideNav {
         right: -320px;
@@ -505,14 +555,14 @@ footer{
 
 @media (min-width: 1023px) and (max-width: 1200px) {
     .nav_img{
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
         padding: 0px 20px;
         
     }
     .menu_img{
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
   
     .intro_grid{
@@ -525,6 +575,10 @@ footer{
     .products_view_container{
         grid-template-rows: 220px 220px 220px;
     }
+    .zoom-container {
+       
+        height: 220px;
+      }
     footer{
         grid-template-columns: 25% 25% 25% 25%;
     }
@@ -582,13 +636,13 @@ footer{
         font-size: large;
     }
     .nav_img{
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
         padding: 0px 20px;
     }
     .menu_img{
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
     .intro_grid{
         grid-template-columns: 70% 50%;
@@ -600,6 +654,10 @@ footer{
     .products_view_container{
         grid-template-rows: 300px 300px 300px;
     }
+    .zoom-container {
+       
+        height: 300px;
+      }
     footer{
         grid-template-columns: 25% 25% 25% 25%;
     }

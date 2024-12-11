@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <header>
+    <header style="position: sticky; top: 0px;z-index: 100000000;">
         <nav>
             <div>
                 <img src="assets/telephone.png" alt="phone Image" class="nav_img">
@@ -42,14 +42,38 @@
     <section style="margin-bottom: 30px;">
         <div class="container">
             <div class="row">
-              <div class="col-12" style="position: relative;">
+              <!-- <div class="col-12" style="position: relative;">
                 <img src="assets/swimming pool.png" alt="swimming pool" class="swimmingpool_img" style="width: 100%; display: block;">
                 <div style="position: absolute; top: 40%; left: 30%; transform: translate(-50%, -50%); text-align: left; background-color: rgba(0, 0, 0, 0.2); padding: 10px; border-radius: 5px;">
                     <h6 style="color: green; margin: 0;">Hello</h6>
                     <h1 style="color: red; margin: 0;">Company Name</h1>
                     <h1 style="color: rebeccapurple; margin: 0;">Company Intro</h1>
                 </div>
-            </div>
+              </div> -->
+              <div class="col-12">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/pool13.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/pool12.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/pool11.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              
                 <div class="intro_grid">
                     <div style="margin: auto;">
                         <h6 class="home_content">ABOUT</h6>
@@ -58,7 +82,7 @@
                         </h1>
                         <p class="home_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cumque quaerat ratione mollitia numquam vero aspernatur facere voluptatem et dolore, modi ipsam dolorum officia necessitatibus, eaque quos blanditiis inventore voluptate.</p>
                         <p class="home_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptate laborum expedita officiis ea suscipit nesciunt debitis. Tenetur, expedita cupiditate.</p>
-                        <button class="home_content">Read More</button>
+                        <button class="home_button">Read More</button>
                     </div>
                     <div>
                         <img src="assets/swimmingpool2.jpg" alt="" class="swimmingpool_img " style="height: 100%;">
@@ -137,37 +161,49 @@
               
                 <div class="col-12" style="background-color: #005f99;">
                     <h1 class="centerFont" style="padding: 20px;">OUR PRODUCTS</h1>
-                    <button style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;">View More</button>
+                    <button class="home_button" style="display: block;margin: auto; margin-bottom: 20px;">View More</button>
                 </div>
                 <div class="col-12">
-                  
                     <div class="products_view_container">
-                        <img src="assets/pool3.jpg" alt="" class="products_view_img">
+                      <div class="zoom-container">
+                        <img src="assets/pool3.jpg" alt="" class="products_view_img" class="zoom-image">
+
+                      </div>
                         <p class="centerFont">Swimming</p>
 
-                        <img src="assets/pool4.jpg" alt="" class="products_view_img">
+                      <div class="zoom-container">
+                        <img src="assets/pool4.jpg" alt="" class="products_view_img" class="zoom-image">
+
+                      </div>
                         <p  class="centerFont">Water Feature</p>
-
                         <p  class="centerFont">Com Project</p>
-                        <img src="assets/swimming pool.png" alt="" class="products_view_img">
-                      
+                      <div class="zoom-container">
+                        <img src="assets/swimming pool.png" alt="" class="products_view_img" class="zoom-image">
+                        
+                      </div>
                         <p  class="centerFont">LAGOONS</p>
+                      <div class="zoom-container">
+                        <img src="assets/swimmingpool2.jpg" alt="" class="products_view_img" class="zoom-image">
+                        
+                      </div>
+                      <div class="zoom-container">
+                        <img src="assets/pool3.jpg" alt="" class="products_view_img" class="zoom-image">
 
-                        <img src="assets/swimmingpool2.jpg" alt="" class="products_view_img">
-                       
-                        <img src="assets/pool3.jpg" alt="" class="products_view_img">
-                        <p  class="centerFont">SAUNAS</p>
-
-                        <img src="assets/pool3.jpg" alt="" class="products_view_img">
+                      </div>
+                          <p  class="centerFont">SAUNAS</p>
+                      <div class="zoom-container">
+                        <img src="assets/pool3.jpg" alt="" class="products_view_img" class="zoom-image">
+                        
+                      </div>
                         <p  class="centerFont">STREAM ROOMS</p>
                     </div>
                 </div>
-                <div class="col-12" style="background-color: #005f99;">
+                <div class="col-12" style="background-color: #005f99;padding-bottom: 20px;">
                     <h5 class="centerFont" style="padding: 20px;">Get Your Free Consultation Today!</h5>
-                    <button style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;">Contact Us</button>
+                    <button class="home_button" style=" display: block;margin: auto; margin-bottom: 20px;">Contact Us</button>
                     <hr>
-                    <h5 class="centerFont" style="padding: 20px;">Download E-Brouchure</h5>
-                    <button style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;">Download</button>
+                    <h5 class="centerFont" style="padding: 10px; margin-top: 10px;">Download E-Brouchure</h5>
+                    <button class="home_button" style=" display: block;margin: auto;">Download</button>
                 </div>
                 <div class="col-12" style="margin-top: 20px;">
                     <h2 class="home_content">BEST SWIMMING POOL CONTRACTOR</h2>
@@ -212,19 +248,19 @@
             <a class="centerFont" href="Contact Us.html">Contact Us</a>
         </div>
         <div>
-            <h4 class="footer_title">Contact</h4>
+            <h4 class="footer_title">Quick Contact</h4>
             <p class="footer_content">Projects</p>
             <div class="centerFont">
                 <img src="assets/telephone.png" alt="" class="footer_img">
                 <a href="tel:0000000000"> +91 0000000000</a>
             </div>
-            <p class="footer_content">Repair & Maintenance</p>
+            <p class="footer_content" style="margin-top: 20px;">Repair & Maintenance</p>
 
             <div class="centerFont">
                 <img src="assets/telephone.png" alt="" class="footer_img">
                 <a href="tel:0000000000"> +91 0000000000</a>
             </div>
-            <div class="centerFont">
+            <div class="centerFont" style="margin-top: 20px;">
                 <img src="assets/mail.png" alt="" class="footer_img">
                 <a href="">Swimmingpool.off@gmail.com</a>
             </div>
