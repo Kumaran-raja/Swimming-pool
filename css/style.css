@@ -1,6 +1,6 @@
 .nav_img{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-right: 1px solid black;
     padding: 0px 10px;
 }
@@ -19,7 +19,26 @@ a{
     overflow: hidden;
     object-fit: cover;
 }
-
+.content_grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 1;
+}
+.content_grid_data {
+    padding: 10px 20px;
+    text-align: justify;
+}
+.content_head {
+    margin: auto 0px;
+}
+.content_body {
+    margin: auto 0px;
+}
 button{
     background-color: white;
     color: black;
@@ -170,7 +189,8 @@ footer{
         font-size: 15px;
     }
     .service_content{
-        margin: auto;
+        margin: auto 0px;
+        padding: 15px;
     }
      /* product page */
     .product_grid{
@@ -291,22 +311,26 @@ footer{
       }
 @media (min-width: 320px) and (max-width: 375px) {
     .nav_img{
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
+        padding: 0px 10px;
+
     }
     .menu_img{
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 }
 @media (min-width: 375px) and (max-width: 425px) {
     .nav_img{
-        height: 20px;
-        width: 20px;
+        height: 23px;
+        width: 23px;
+        padding: 0px 15px;
+
     }
     .menu_img{
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
     .products_view_container{
         grid-template-rows: 120px 120px 120px;
@@ -319,10 +343,12 @@ footer{
     .nav_img{
         height: 25px;
         width: 25px;
+        padding: 0px 20px;
+
     }
     .menu_img{
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
     .products_view_container{
         grid-template-rows: 120px 120px 120px;
@@ -333,12 +359,14 @@ footer{
 }
 @media (min-width: 480px) and (max-width: 600px) {
     .nav_img{
-        height: 35px;
-        width: 35px;
+        height: 25px;
+        width: 25px;
+        padding: 0px 20px;
+
     }
     .menu_img{
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
     .products_view_container{
         grid-template-rows: 150px 150px 150px;
@@ -362,12 +390,14 @@ footer{
 @media (min-width: 600px) and (max-width: 767px) {
       /* Styles for devices between 481px and 767px */
       .nav_img{
-        height: 35px;
-        width: 35px;
+        height: 25px;
+        width: 25px;
+        padding: 0px 20px;
+
     }
     .menu_img{
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
     .intro_grid{
         grid-template-columns: 50% 50%;
@@ -387,6 +417,9 @@ footer{
     .products_view_container{
         grid-template-rows: 150px 150px 150px;
     }
+    .service_grid li{
+        font-size: 18px;
+    }
     footer{
         grid-template-columns: 50% 50%;
     }
@@ -404,8 +437,9 @@ footer{
         font-size: medium;
     }
     .nav_img{
-        height: 35px;
-        width: 35px;
+        height: 30px;
+        width: 30px;
+        padding: 0px 20px;
         
     }
     .menu_img{
@@ -434,11 +468,17 @@ footer{
     footer{
         grid-template-columns: 50% 50%;
     }
+    .content_grid{
+        grid-template-columns: 30% 70%;
+    }
+    .content_head{
+        margin: auto;
+    }
     .service_grid h2{
         font-size: 30px;
     }
     .service_grid li{
-        font-size: 22px;
+        font-size: 20px;
     }
     .product_grid  p{
         font-size: 15px;
@@ -465,8 +505,9 @@ footer{
 
 @media (min-width: 1023px) and (max-width: 1200px) {
     .nav_img{
-        height: 35px;
-        width: 35px;
+        height: 30px;
+        width: 30px;
+        padding: 0px 20px;
         
     }
     .menu_img{
@@ -495,7 +536,12 @@ footer{
       #sideNav nav ul li a {
         font-size: 25px;
       }
-   
+      .content_grid{
+        grid-template-columns: 30% 70%;
+    }
+    .content_head{
+        margin: auto;
+    }
        /* service page Style */
    
     .service_grid h2{
@@ -536,13 +582,13 @@ footer{
         font-size: large;
     }
     .nav_img{
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         padding: 0px 20px;
     }
     .menu_img{
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
     .intro_grid{
         grid-template-columns: 70% 50%;
@@ -567,6 +613,13 @@ footer{
         font-size: 25px;
       }
     /* service page Style */
+  
+    .content_grid{
+        grid-template-columns: 30% 70%;
+    }
+    .content_head{
+        margin: auto;
+    }
   
     .service_grid h2{
         font-size: 30px;
