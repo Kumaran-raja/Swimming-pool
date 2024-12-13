@@ -4,6 +4,35 @@
     border-right: 1px solid black;
     padding: 0px 10px;
 }
+h1{
+    font-weight: 900;
+}
+h2{
+    font-weight: 900;
+}
+h3{
+    font-weight: 900;
+}
+h4{
+    font-weight: 900;
+}
+h5{
+    font-weight: 900;
+}
+h6{
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('path-to-font/Montserrat-Regular.woff2') format('woff2'),
+         url('path-to-font/Montserrat-Regular.woff') format('woff');
+}
+
+    body {
+        font-family: 'Montserrat', sans-serif ;
+    }
+
+
 .zoom-container {
     overflow: hidden;
     position: relative;
