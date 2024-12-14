@@ -1,9 +1,26 @@
 .nav_img{
     height: 25px;
     width: 25px;
-    border-right: 1px solid black;
-    padding: 0px 10px;
+    margin: 0px 20px;
 }
+
+.nav_logo{
+    width: 35px;
+    height: 35px;
+}
+.menu_container{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+marquee{
+    width: max-content;
+    margin: auto;
+    color: white;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
 h1{
     font-weight: 900;
 }
@@ -21,6 +38,9 @@ h5{
 }
 h6{
     font-weight: 900;
+}
+a:hover{
+    cursor: pointer;
 }
 @font-face {
     font-family: 'Montserrat';
@@ -70,6 +90,9 @@ a{
     margin: 10px;
     border-radius: 20px;
 }
+.home_button:hover{
+    background-color: greenyellow;
+}
 .content_grid {
     padding: 20px;
     display: grid;
@@ -83,6 +106,10 @@ a{
 .content_grid_data {
     padding: 10px 20px;
     text-align: justify;
+}
+.content_grid_data1{
+    line-height: 2.5; 
+    font-size: 15px;
 }
 .content_head {
     margin: auto 0px;
@@ -267,14 +294,23 @@ footer{
     }
     .contact_input{
         margin: 10px;
-        padding: 10px;
+        padding: 15px;
         width: 80%;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    .contact_Message{
+    .submit_button{
+        margin-left: 9%;
         padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .submit_button:hover{
+        background-color: greenyellow;
+    }
+    .contact_Message{
+        padding: 15px;
         margin: 10px;
         height: 100px;
         width: 80%;
@@ -364,9 +400,13 @@ footer{
     .nav_img{
         height: 20px;
         width: 20px;
-        padding: 0px 10px;
+        margin: 0px 10px;
 
     }
+    marquee{
+        display: none;
+    }
+    
     .products_view_container{
         grid-template-rows: 120px 120px 120px;
     }
@@ -381,12 +421,14 @@ footer{
 }
 @media (min-width: 375px) and (max-width: 425px) {
     .nav_img{
-        height: 23px;
-        width: 23px;
-        padding: 0px 15px;
+        height: 20px;
+        width: 20px;
+        margin: 0px 15px;
 
     }
-    
+    marquee{
+        display: none;
+    }
     .menu_img{
         width: 25px;
         height: 25px;
@@ -403,10 +445,13 @@ footer{
     }
 }
 @media (min-width: 425px) and (max-width: 480px) {
+    marquee{
+        display: none;
+    }
     .nav_img{
         height: 25px;
         width: 25px;
-        padding: 0px 20px;
+        margin: 0px 15px;
 
     }
     .menu_img{
@@ -428,8 +473,11 @@ footer{
     .nav_img{
         height: 25px;
         width: 25px;
-        padding: 0px 20px;
+        margin: 0px 20px;
 
+    }
+    marquee{
+        display: none;
     }
     .menu_img{
         width: 25px;
@@ -459,12 +507,13 @@ footer{
     }
 }
 @media (min-width: 600px) and (max-width: 767px) {
-      /* Styles for devices between 481px and 767px */
-      .nav_img{
+    .nav_img{
         height: 25px;
         width: 25px;
-        padding: 0px 20px;
-
+        margin: 0px 20px;
+    }
+    marquee{
+        display: none;
     }
     .menu_img{
         width: 25px;
@@ -514,8 +563,14 @@ footer{
     .nav_img{
         height: 25px;
         width: 25px;
-        padding: 0px 20px;
-        
+        margin: 0px 20px;
+    }
+    marquee{
+        width: 40%;
+        margin: auto;
+        color: white;
+        padding: 0px 10px;
+        font-size: 20px;
     }
     .menu_img{
         width: 25px;
@@ -586,8 +641,11 @@ footer{
     .nav_img{
         height: 25px;
         width: 25px;
-        padding: 0px 20px;
+        margin: 0px 20px;
         
+    }
+    marquee{
+        width: 40%;
     }
     .menu_img{
         width: 25px;
@@ -662,12 +720,20 @@ footer{
 
 @media (min-width: 1200px) {
     p{
-        font-size: large;
+        font-size: 22px;
     }
     .nav_img{
         height: 25px;
         width: 25px;
-        padding: 0px 20px;
+        margin: 0px 20px;
+    }
+    .content_grid_data1{
+        line-height: 2.5; 
+        font-size: 25px;
+    }
+    .nav_logo{
+        width: 40px;
+        height: 40px;
     }
     .menu_img{
         width: 25px;
