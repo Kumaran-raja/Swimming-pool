@@ -15,18 +15,23 @@ scrollTopBtn.addEventListener('click', (e) => {
 });
 
 
-//Side Navigation Bar
-
+// Side Navigation
 const menuBtn = document.getElementById('menuBtn');
 const sideNav = document.getElementById('sideNav');
 const closeBtn = document.getElementById('closeBtn');
 
+let isOpen = false;
+
 menuBtn.addEventListener('click', () => {
-  sideNav.classList.add('open');
+  isOpen = !isOpen;
+  sideNav.classList.toggle('open', isOpen);
+  closeBtn.style.display = isOpen ? 'block' : 'none';
 });
 
 closeBtn.addEventListener('click', () => {
+  isOpen = false;
   sideNav.classList.remove('open');
+  closeBtn.style.display = 'none';
 });
 
 
@@ -62,3 +67,8 @@ function validateForm() {
   alert("Form submitted successfully!");
   return true;
 }
+
+const contact=document.getElementById("contact_btn");
+contact.addEventListener('click',()=>{
+  window.location.href = "/Contact Us.html";
+})
