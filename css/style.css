@@ -22,7 +22,6 @@ marquee{
     padding: 0px 10px;
     font-size: 18px;
 }
-
 h1{
     font-weight: 900;
 }
@@ -43,6 +42,9 @@ h6{
 }
 a:hover{
     cursor: pointer;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 @font-face {
     font-family: 'Montserrat';
@@ -385,7 +387,7 @@ footer{
       }
       #scrollTopBtn {
         position: fixed;
-        bottom: 30px;
+        bottom: 50px;
         right: 30px;
         display: none; /* Initially hidden */
         z-index: 1000;
@@ -396,6 +398,7 @@ footer{
         background-color: white;
         border-radius: 180px;
         padding: 10px;
+        
         cursor: pointer;
       }
 @media (min-width: 320px) and (max-width: 375px) {
@@ -718,8 +721,7 @@ footer{
         margin: 0px 20px;
     }
     .content_grid_data1{
-        line-height: 2.5; 
-        font-size: 25px;
+        font-size: 20px;
     }
     .nav_logo{
         width: 40px;
