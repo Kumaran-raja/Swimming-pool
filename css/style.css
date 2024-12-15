@@ -359,6 +359,15 @@ footer{
         display: grid;
         grid-template-columns: 100%;
     }
+    .officer_grid p{
+        text-align: center;
+        margin: 10px;
+    }
+    .officer_grid h6{
+        text-align: center;
+        margin: 10px;
+        font-size: 15px;
+    }
     .officer_images{
         width: 90%;
         height: 40vh;
