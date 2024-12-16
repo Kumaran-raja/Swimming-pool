@@ -33,6 +33,9 @@ closeBtn.addEventListener('click', () => {
   sideNav.classList.remove('open');
   closeBtn.style.display = 'none';
 });
+const menuItems = document.querySelectorAll('.menu-item');
+
+
 
 
 // form validation
