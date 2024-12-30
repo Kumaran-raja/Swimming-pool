@@ -15,7 +15,7 @@ scrollTopBtn.addEventListener('click', (e) => {
 });
 
 
-// Side Navigation
+// Side Navigation Js  code
 const menuBtn = document.getElementById('menuBtn');
 const sideNav = document.getElementById('sideNav');
 const closeBtn = document.getElementById('closeBtn');
@@ -38,7 +38,7 @@ const menuItems = document.querySelectorAll('.menu-item');
 
 
 
-// form validation
+// form validation code
 
 function validateForm() {
   const name = document.getElementById("name").value.trim();

@@ -27,6 +27,7 @@ marquee{
     padding: 0px 10px;
     font-size: 18px;
 }
+
 .product_name{
     height: 100%;
     width: 100%;
@@ -461,6 +462,7 @@ footer{
         
         cursor: pointer;
       }
+      /*for  Small Mobile  */
 @media (min-width: 320px) and (max-width: 375px) {
   
     marquee{
@@ -484,6 +486,8 @@ footer{
     }
   
 }
+      /*for  medium Mobile  */
+
 @media (min-width: 375px) and (max-width: 425px) {
     
     marquee{
@@ -505,6 +509,8 @@ footer{
         margin: auto;
     }
 }
+      /*for  large Mobile  */
+
 @media (min-width: 425px) and (max-width: 480px) {
     marquee{
         display: none;
@@ -525,6 +531,8 @@ footer{
         margin: auto;
     }
 }
+      /*for  tablet  */
+
 @media (min-width: 480px) and (max-width: 600px) {
     .nav_img{
         margin: 0px 20px;
@@ -684,6 +692,7 @@ footer{
        
       }
 }
+      /*for  laptop  */
 
 @media (min-width: 1023px) and (max-width: 1200px) {
     .nav_img{
@@ -762,6 +771,7 @@ footer{
        
       }
 }
+      /*for Large Laptop  */
 
 @media (min-width: 1200px) {
     p{
